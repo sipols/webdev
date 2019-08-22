@@ -1,0 +1,36 @@
+
+
+div {
+
+    border: solid;
+    border-color: mediumpurple;
+    border-radius: 50px 0px 0px;
+    width: 40%;
+    height: 20%;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+#titleDiv{
+
+    color: blueviolet;
+    border-radius: 0% 50px;
+    background-color: aliceblue;
+
+}
+
+#countryDiv{
+
+    color: lightcoral;
+    font: icon;
+    font-weight: bold;
+    background-color: lavender;
+    border-radius: 50px 0px 50px;
+}
+ h1{
+     text-align: center;
+ }
+
+ h3 {
+     text-align: center;
+ }

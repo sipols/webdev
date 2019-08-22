@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTMLLogic</title>
+    <style>
+        #line1{
+            color: red;
+        }
+        #line2{
+            color: blue;
+            border: solid;
+            /* border-color: blue; */
+        }
+
+        #line3{
+            border: solid;
+        }
+
+        /* finds all classes with this string .string */
+        .lineOne{
+            color: red;
+            /* border: solid; */
+        }
+        .lineTwo{
+            color: blue;
+            border: solid;
+            /* border-color: blue; */
+        }
+
+        .lineThree{
+            border: solid;
+            color:blueviolet;
+        }
+        /* select multiple tag names via comma */
+         table,h1,p{
+            color:chartreuse;
+         }
+
+         div{
+             width: 80%;
+             height: 300px;
+
+             /* use color picker, transparency a [0,1], hex numbers, rgb or color names, in google can adjust color */
+             /* background-color: hsl(13, 25%, 33%, 0.9); */
+             /* rgba a is for transparency */
+             background-color: rgba(100, 25, 33, 0.8);
+             /* can add backrgound image to any element */
+             /* background-image:  url(./images/butterfly.jpg), */
+             /* background-image: linear-gradient(rgb(151, 49, 49), white); */
+
+             /* to cover up a image with gradient */
+             background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.83)),
+url('images/butterfly.jpg');
+             background-repeat: no-repeat;
+         }
+         /* <!-- or adding a bckgrnd image via url even if local --> */
+         body{
+             background-image: linear-gradient(to bottom, white, rgba(21, 45, 153, 0.13)), url('./images/imageScreen.jpg');
+             /* background-image: url('./images/imageScreen.jpg'); */
+             background-repeat: no-repeat;
+         }
+    
+    </style>
+</head>
+<!-- body or the whole page has a background color -->
+<!-- <body style="background: tan"> -->
+<!-- or adding a bckgrnd image via url even if local -->
+<!-- <body style="background-image: url('./images/imageScreen.jpg'); background-repeat: no-repeat"> -->
+<body>
+    <p id="line1">This text is red with no bckgrnd or border.</p>
+    <p id="line2">This text is blue with only border.</p>
+    <p id="line3">This text has only border.</p>
+
+    <p class="lineOne">This text is red with no bckgrnd or border.</p>
+    <p class="lineTwo">This text is blue with only border.</p>
+    <p class="lineThree">This text has only border.</p>
+
+    <!-- thet compiler goes down and applies from two classes the last style color -->
+    <p class="lineThree lineOne">Class 3 and One conflicting.</p>
+    <div></div>
+</body>
+</html>

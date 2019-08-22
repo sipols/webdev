@@ -1,0 +1,17 @@
+.main-div{
+    margin-top: 10px;
+    margin-left: 100px;
+    width: 300px;
+    height: 300px;
+    border: 10px solid lightcoral;
+    /* for overflowing text to contain it and allow scrolling */
+    overflow: scroll;
+    padding: 10px 11px 12px 50px;
+}
+
+/* .text-div{
+    /* padding-left: 50px; */
+    /* padding-top: 10px; */
+ 
+    
+} */

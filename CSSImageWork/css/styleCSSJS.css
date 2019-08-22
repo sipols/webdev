@@ -1,0 +1,62 @@
+ img{
+    /* width: 150px;
+    height: 150px; */
+    border: solid 3px lightcoral;
+    /* border-radius: 100px; */
+    /* to make a circle */
+    /* border-radius: 50%; */
+} 
+
+
+.circled-image{
+    width: 150px;
+    height: 150px;
+       /* to make a circle */
+    border-radius: 50%;
+    border: none;
+}
+
+.thumbnail-image{
+    border: solid 1px grey;
+    border-radius: none;
+    /* width: 150px;
+    height: 150px; */
+    padding: 5px;
+}
+/* responsive images */
+.responsive{
+    max-width: 100%;
+    height: auto;
+}
+
+.big-to-small{
+    width: 50%;
+    /* height: 250px; */
+}
+
+.centered-img{
+    /* automated margin from right-left */
+    margin: auto;
+    display: block;
+}
+
+.opacity{
+    opacity: 0.5;
+}
+
+/* only works in Chrome -webkit */
+.changecolor{
+     /* -webkit-filter: sepia(0.8); */
+    /* blur verschwommen */
+    /* -webkit-filter: blur(3px);  */
+    /* -webkit-filter: brightness(1.5); */ 
+    -webkit-filter: invert(1);
+}
+
+.changecolor2{
+    /* -webkit-filter: sepia(0.8); */
+   /* blur verschwommen */
+   -webkit-filter: blur(3px); 
+   /* -webkit-filter: brightness(1.5); */ 
+   /* -webkit-filter: invert(1); */
+}

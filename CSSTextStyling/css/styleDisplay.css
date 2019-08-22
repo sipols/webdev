@@ -1,0 +1,73 @@
+div{
+    border: 1px solid;
+    width: 25%;
+    height: 50px;
+    /* display: block; */
+    background-color: lightgreen;
+}
+
+div div{
+    height: 50%;
+    /* to hide an element */
+    display: none;
+}
+
+.inline{
+    display: inline;
+}
+
+h1{
+    display: inline;
+}
+
+span{
+    /* both break a span into a new line */
+    /* display: flex; */
+    display: block;
+}
+
+.hidden{
+    border: 1px solid;
+    width: 25%;
+    height: 50px;
+    background-color: blue;
+    /* display: none; */
+    /* visibility: hidden; */
+}
+
+li{
+    display: inline;
+    border: 5px solid lightcoral;
+
+}
+
+a{
+    width: 150px;
+    margin: auto;
+    height: 50px;
+    background-color: coral;
+    padding: 18px;
+    padding-top: 35px;
+    display: block;
+    border:solid 1px black;
+    border-radius: 45px;
+    color:wheat;
+    text-align: center;
+    box-shadow: 2px 2px 2px black;
+}
+/* event handling! with : or :: */
+a:hover{
+    background-color: rgb(148, 35, 15);
+}
+
+a::after{
+    background-color: blueviolet;
+    width: 120px;
+    content: "some after content"
+}
+
+*::selection{
+    color: blue;
+    background-color: yellow;
+
+}

@@ -1,0 +1,86 @@
+*{
+    box-sizing: border-box;
+}
+
+.col-1{
+    width: 8.33%;
+}
+.col-2{
+    width: 16.66%;
+}
+.col-3{
+    width: 24.99%;
+}
+.col-4{
+    width: 33.33%;
+}
+.col-5{
+    width: 41.66%;
+}
+.col-6{
+    width: 49.99%;
+}
+.col-7{
+    width: 58.32%;
+}
+.col-8{
+    width: 66.65%;
+}
+.col-9{
+    width: 74.98%;
+}
+.col-10{
+    width: 83.31%;
+}
+.col-11{
+    width: 91.63%;
+}
+.col-12{
+    width: 100%;
+}
+[class*="col"] {
+    float: left;
+}
+.border{
+    border: 2px solid black;
+}
+.p-3{
+    padding: 3px;
+}
+.row
+{
+    float: left;
+    width:100%;
+}
+.content{
+    padding: 10px;
+}
+
+@media only screen and (max-width: 600px){
+    [class*="col"] {
+        width:100%;
+    }
+
+}
+@media only screen and (max-width: 992px){
+    .col-4, .col-3, .col-2, .col-1, .col-7, .col-8, 
+    .col-5,
+    .col-9, .col-10, .col-11, .col-12
+    {
+        width:100%;
+    }
+    
+}
+@media only screen and (min-width: 1200px){
+    [class*="col"] {
+        
+    }
+
+}
+
+
+/* 600 is for extra small devices smart whatches*/
+/* 600px-768px is for small  devices smart phones*/
+/* 768px-992px is for medium  devices tablets fablet*/
+/* 992px-1200px is for larg  devices laptobs desktops*/
+/* more than 1200px is for extra larg  devices big laptobs larg screens */

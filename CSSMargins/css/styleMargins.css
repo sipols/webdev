@@ -1,0 +1,57 @@
+
+h1, p{
+/* for all h1 and p elems */
+    margin-left: 50px;
+}
+
+div p{
+/* the p inside a div is referenced */
+    margin-left: 100px;
+}
+
+div{
+    /* for any div this works */
+    width: 400px;
+    /* with perfect fits with the text */
+    height: 50%;
+    background-color: bisque;
+    border: 10px solid deeppink;
+}
+
+#ndiv{
+    margin-top: 50px;
+}
+
+.right-margin{
+    /* for any element with class name "right-margin" */
+    width: 80%;
+    margin-right:  200px;
+}
+
+.bottom-margin{
+    /* for any element with class name "bottom-margin" */  
+    margin-bottom:  50px;
+}
+
+.margin-one-value{
+    /* in any direction if one value for margin */
+    margin: 100px;
+}
+
+.margin-two-value{
+    /* in any direction for two value for margins in:
+     top-bottom 200px, right-left 50px*/
+    margin: 200px 50px;
+}
+
+.margin-four-value{
+    /* in any direction for two value for margins in:
+     top-200px, right-50px bottom-20px left-30px*/
+    margin: 200px 50px 20px 30px;
+}
+
+.auto-margin{
+    /* auto margin - any element has auto margin as a class available */
+    /* to center horizontally */
+    margin: auto;
+}

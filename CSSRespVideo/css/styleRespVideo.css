@@ -1,0 +1,50 @@
+body{
+    margin: 0%;
+}
+.row{
+    width: 100%;
+    float:left;
+    /* margin-top: 0px; */
+}
+.header{
+    /* margin-top: 0px; */
+    background-color: blanchedalmond;
+    color: rgb(11, 124, 68);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.nav{
+    list-style: none;
+    /* has to be done for li instead to work */
+    /* display: inline; */
+    margin:auto;
+}
+.nav li a{
+    /* any link in li and a */
+    text-decoration: none;
+    color: white;
+    padding: 14px 16px 14px 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.nav li a:hover{
+    background-color: lightcoral;
+    padding: 14px 16px 14px 16px;
+    color: rgb(9, 95, 52);
+}
+.active{
+    color: white;
+    background-color: rgb(11, 124, 68);
+    padding: 14px 16px 14px 16px;
+}
+.nav li{
+    display: inline;
+    padding: 14px 16px 14px 16px;
+}
+.nav{
+    width: 80%;
+    /* height: 40px; */
+    float: left;
+    padding: 14px 16px 14px 16px;
+    background-color: lightgreen;
+}
+
+

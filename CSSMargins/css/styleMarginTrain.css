@@ -1,0 +1,23 @@
+.centerDivDotted{
+    margin: auto;
+    margin-top: 75px;
+    width: 500px;
+    height: 300px;
+    border: 15px dotted green;
+}
+
+.centerDivInside{
+    margin: auto;
+    width: 80%;
+    height: 80%;
+    border: 10px solid violet;
+}
+
+.rightSubDiv{
+    /* in any direction:
+     top-, right- bottom- left-*/
+    margin: 5% 0% 5% 45%;
+    width: 50%;
+    height: 150px;
+    border: 10px solid blue;
+}

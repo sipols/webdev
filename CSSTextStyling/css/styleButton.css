@@ -1,0 +1,42 @@
+
+li{
+    display: inline;
+    /* border: 5px solid lightcoral; */
+}
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: green;
+    /* text-align: center; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: medium;
+    font-weight: normal;
+}
+
+li a{
+    width: 80px;
+    margin: auto;
+    height: 50px;
+    background-color: green;
+    padding: 18px;
+    padding-top: 35px;
+    display: block;
+    border:solid 1px lightgreen;
+    border-radius: 35px;
+    color:wheat;
+    text-align: center;
+    box-shadow: 2px 2px 2px black;
+    /* remove underline from links */
+    text-decoration: none;
+}
+/* event handling! with : or :: */
+li a:hover{
+    background-color:darkgreen;
+}
+
+li::after{
+    content:"after"
+}

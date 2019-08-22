@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+    /* all h1 headings unless further specified */
+    h1{
+        color:tomato;
+        font-size: 50px;
+    }
+    /* takes from h1 the classes head1 strings */
+    h1.head1{
+        color:teal;
+    }
+    /* takes any class that has "anotherclass" string in it */
+    .anotherclass{
+        color: cornflowerblue;
+    }
+    /* takes only the specified id after # */
+    #headwithid{
+        color: aquamarine;
+    }
+
+    </style>
+</head>
+<body>
+    <h1 class="heading1">Heading 1</h1>
+    <h1 >Heading 1 - I have no class or ID.</h1>
+    <h1 class="head1">Heading 1 Head1</h1>
+    <h1 class="head 1 anotherclass">Heading 1 anotherclass</h1>
+    <h1 id="sp">SP text from external file</h1>
+    <h1 id="headwithid">Head with and ID</h1>
+</body>
+</html>

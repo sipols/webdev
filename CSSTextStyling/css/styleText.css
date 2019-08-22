@@ -1,0 +1,13 @@
+/* to specify more into the tag specify the p inside the div via space - not comma! */
+.someclass p, h3{
+    color: lightblue;
+}
+
+div p{
+    color: lightcoral;
+}
+
+/* sub classed p in that div and all enclosed by it */
+.family div div div p{
+    color: yellow;
+}

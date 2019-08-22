@@ -1,0 +1,18 @@
+html{
+    font-size: 62.5%;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.panner{
+    background: url('./imgs/hero.jpg') no-repeat 30% 25%;
+    height: 40rem;
+}
+[class*="col"] p {
+    font-size: 2rem;
+}
+[class*="col"] h3 {
+    font-size: 3rem;
+}
