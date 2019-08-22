@@ -58,4 +58,18 @@ header{
     /* padding: 14px 16px 14px 16px; */
 }
 
+.banner{
+    background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url('./imgs/hero.jpg') no-repeat 60% 25%;
+    background-attachment: fixed;
+    height: 40rem;
+    height: 400px;
+    background-color: lightcoral;
+    margin: 5px 5px 5px 5px;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 5%;
+    color: antiquewhite;
+    font-size: 30px;
+}
+
 
