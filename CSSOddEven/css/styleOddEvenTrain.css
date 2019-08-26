@@ -15,7 +15,7 @@ h3:nth-child(5){
 }
 h3:nth-child(6){
     color: red;
-    border: 3px solid lightgray;
+    /* border: 3px solid lightgray; */
 }
 /* h1 is as 7 child here therefore skip one */
 h3:nth-child(8){
@@ -23,17 +23,16 @@ h3:nth-child(8){
 }
 h3:nth-child(9){
     color: grey;
-    border: 3px solid;
+    /* border: 3px solid; */
 }
 h3:nth-child(10){
     color: lightcoral;
-    border: 3px solid lightcoral;
+    /* border: 3px solid lightcoral; */
 }
 h3:nth-child(11){
     color: black;
     box-shadow: 2px 2px 2px 2px;
 }
-
 h3:nth-child(even){
     border: 3px solid lightseagreen;
 }
