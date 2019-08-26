@@ -6,11 +6,12 @@
     padding: 2%;
     margin: auto;
     border-radius: 20px;
-    
+
     /* font-family: 'Lobster', cursive; */
     /* if font family not working either link it or add into file system*/
-    font-family:"lobsterFont";
-    transition: 3s;
+    /* font-family:"lobsterFont"; */
+    font-family: "./font/Lobster/Lobster-Regular";
+    transition: 1s;
 }
 
 .font1 h1{
@@ -18,14 +19,26 @@
 }
 
 .font1:hover{
-    background-color: green;
+    background-color: lightseagreen;
 }
 
 /* adding a new font */
 /* only for free fonts if published */
 
-@font-face{
-    font-family:"lobsterFont";
+/* @font-face{ */
+    /* font-family:"lobsterFont"; */
     /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
-    src:url("./font/Lobster/Lobster/Lobster-Regular.ttf");
+    /* src:url("./font/Lobster/Lobster/Lobster-Regular.ttf"); */
+/* } */
+
+.font1 h1:hover{
+    transition: 1s;
+    color: white;
+    font-size: 4vw;
+    /* transform: rotate(360); */
+}
+
+i:hover{
+    color: red;
+    transform: rotate(50deg);
 }
