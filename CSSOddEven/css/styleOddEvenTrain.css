@@ -33,3 +33,7 @@ h3:nth-child(11){
     color: black;
     box-shadow: 2px 2px 2px 2px;
 }
+
+h3:nth-child(even){
+    border: 3px solid lightseagreen;
+}
