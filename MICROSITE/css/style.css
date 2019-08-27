@@ -87,6 +87,10 @@ h1{
     display: inline;
 }
 
+.appear{
+    display: none;
+}
+
 @media only screen and (max-width:1400px){
     .banner{
         height: 300px;
@@ -105,11 +109,14 @@ h1{
     .round-button{
         width: 100%;
     }
-    .round-button h1{
+    /* .round-button h1{
         font-size: 100%;
-    }
+    } */
     .description{
         display: none;
+    }
+    .appear{
+        display: block;
     }
 }
 
