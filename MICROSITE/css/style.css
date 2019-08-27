@@ -83,6 +83,9 @@ body, footer{
    
 }
 
+h1{
+    display: inline;
+}
 
 @media only screen and (max-width:1400px){
     .banner{
@@ -104,6 +107,9 @@ body, footer{
     }
     .round-button h1{
         font-size: 100%;
+    }
+    .description{
+        display: none;
     }
 }
 
