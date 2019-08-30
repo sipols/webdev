@@ -31,7 +31,8 @@ hTags[7].style.color = "purple";
 hTags[8].innerText = "9 tag h1";
 hTags[8].style.color = "violet";
 
-hTags[hTags.length-1].innerText = "Last element h1";
+//inner HTML
+hTags[hTags.length-1].innerHTML = "<i>Last element h1</i>";
 hTags[hTags.length-1].style.color = "khaki";
 
 console.log(hTags);
@@ -41,3 +42,5 @@ console.log(hTags[3]);
 var h3Tags = document.getElementsByTagName("h3");
 h3Tags[0].innerText = "First tag h3";
 console.log(h3Tags[0]);
+/////////////////
+var newTag = document.createElement("span");
