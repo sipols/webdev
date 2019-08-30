@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style.css">
+    <!-- <link re="stylesheet" href="./index.js"> -->
+    <script src="./index.js"></script>
+    <title>Color Picker</title>
+</head>
+
+<body>
+    <div class="main">
+        <h2>Color Picker RGBA</h2>
+        <div id="color-picker" class="color-picker">
+        <div id="result" class="result"></div>
+        </div>
+<!--         
+        <input id="red" onchange="change()" type="number">
+        <input id="green" onchange="change()" type="number">
+        <input id="blue" onchange="change()" type="number"> -->
+        <!-- <div id="result1" class="result"></div> -->
+
+        <!-- onchange -->
+        <!-- <input id="red" onchange="change()" value="0" type="range" min="0" max="255">
+        <input id="green" onchange="change()" value="0" type="range" min="0" max="255">
+        <input id="blue" onchange="change()" value="0" type="range" min="0" max="255"> -->
+
+        <!-- onmousemove -->
+        <p>A</p>
+        <input id="transparency" onmousemove="change()" value="0" type="range" min="0.01" max="1" step="0.01">
+        
+        <br><p>R:</p>
+        <input id="red" onmousemove="change()" value="0" type="range" min="0" max="255">
+        <br> <p>G</p>
+        <input id="green" onmousemove="change()" value="0" type="range" min="0" max="255">
+        <br> <p>B</p>
+        <input id="blue" onmousemove="change()" value="0" type="range" min="0" max="255">
+
+        
+        <input type="button" name="" id="button" value="log it" onclick="change()">
+
+        <h2>Circle</h2>
+        <div id="circle" class="circle"></div>
+        <p>Change the width of the circle</p>
+        <input id="circle-width" onmousemove="change()" value="0" type="range" min="10" max="1000" step="1">
+        <br>
+
+    </div>
+
+
+</body>
+
+</html>
