@@ -1,5 +1,22 @@
-header{
-  max-height: 30px;
+.headerDiv{
+  height:250px;
+  /* max-height: 250px; */
   max-width: 100%;
-  background-color: lightgreen;
+  background-color: lightyellow;
+}
+
+.whatisDiv{
+  float: left;
+  height: 100px;
+  width: 270px;
+  margin: auto;
+  background-color: lightblue;
+}
+
+.menuDiv{
+  float: right;
+  height: 60px;
+  width: 250px;
+  margin: auto;
+  background-color: blanchedalmond;
 }
