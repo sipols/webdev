@@ -1,0 +1,16 @@
+sed -e 's/user=&uid\./user=\&sysuserid./g'
+
+$sed 's/unix/linux/' geekfile.txt
+
+sed -e 's/user=&uid\./user=\&sysuserid./g'
+_______________________________________
+The tried and true method for HTML:
+
+Replace the & character with &amp;
+Replace the < character with &lt;
+Replace the > character with &gt;
+
+________________________________________
+sed -e 's/\&/\&amp/g'
+sed -e 's/\</\&lt/g'
+sed -e 's/\>/\&gt/g'

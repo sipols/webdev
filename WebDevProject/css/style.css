@@ -29,7 +29,7 @@
 
 .containerDiv{
   height: 1320px;
-  width: 100%;
+  max-width: 100%;
   margin: auto;
   background-color: lightblue;
   float: left;
@@ -38,7 +38,8 @@
 .leftMenuDiv{
   float: left;
   height: 1300px;
-  width: 200px;
+  max-width: 40%;
+  width: 150px;
   margin: 5px;
   background-color: lightseagreen;
   display: block;
@@ -48,7 +49,7 @@
   float: left;
   display: block;
   height: 1300px;
-  width: 80%;
+  max-width: 80%;
   background-color: lightpink;
   margin: 5px 5px 5px 5px;
 }
@@ -58,16 +59,18 @@
 }
 
 .pictureDiv{
+  position: relative;
   margin: 15px;
   margin-left: 35px;
-  width: 92%;
+  max-width: 92%;
   height: 270px;
   background-color: crimson;
 }
 
 .pictureDiv img{
   max-width:100%;
-  max-height:100%;
+  height:100%;
+  /* object-fit: contain; */
 }
 
 .infoDiv{
@@ -90,6 +93,8 @@
 }
 
 .htmlDiv{
+  position: relative;
+  /* z-index: 0; */
   float: left;
   display: block;
   height: 60%;
@@ -98,28 +103,12 @@
   margin: 5px 2px 5px 5px;
 }
 
-.htmlDivCurtain{
-  position: fixed;
-  left: 0px;
-  top: 0px;
-  float: left;
-  display: block;
-  height: 60%;
-  width: 65%;
+/* .htmlDiv:hover{
   background-color: rgba(99, 93, 94, 0.5);
-  margin: 5px 2px 5px 5px;
-}
-
-.htmlDivCurtain:hover{
-  background-color: rgba(99, 93, 94, 0.0);
-  /* float:right;
-  height: 100%;
-  width: 35px; */
-  /* background-color: rgba(12, 100, 93, 0.5); */
-} 
-
+}  */
 
 .cssDiv{
+  position: relative;
   float: right;
   display: block;
   height: 97%;
@@ -129,6 +118,7 @@
 }
 
 .jsDiv{
+  position: relative;
   float: left;
   display: block;
   height: 35%;
@@ -136,6 +126,39 @@
   background-color: rgb(37, 189, 105);
   margin: 5px 5px 5px 5px;
 }
+
+.overlay{
+  position: absolute; 
+  /* bottom: 0;  */
+  right: 0;
+  background: rgb(107, 92, 24);
+  background: rgba(85, 78, 14, 0.5); /* Black see-through */
+  color: #f1f1f1; 
+  width: 20%;
+  height: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+}
+
+.htmlDiv:hover .overlay {
+  opacity: 1;
+}
+
+.cssDiv:hover .overlay {
+  opacity: 1;
+}
+
+.jsDiv:hover .overlay {
+  opacity: 1;
+}
+
+.pictureDiv:hover .overlay {
+  opacity: 1;
+}
+
 
 .footerDiv{
   float: left;
