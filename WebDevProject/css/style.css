@@ -93,38 +93,30 @@
 }
 
 .htmlDiv{
-  position: relative;
-  /* z-index: 0; */
   float: left;
-  display: block;
   height: 60%;
   width: 65%;
   background-color: rgb(175, 58, 78);
   margin: 5px 2px 5px 5px;
 }
-
-/* .htmlDiv:hover{
-  background-color: rgba(99, 93, 94, 0.5);
-}  */
-
 .cssDiv{
-  position: relative;
   float: right;
-  display: block;
   height: 97%;
   width: 30%;
   background-color: rgb(189, 37, 151);
   margin: 5px 5px 5px 2px;
 }
-
 .jsDiv{
-  position: relative;
   float: left;
-  display: block;
   height: 35%;
   width: 65%;
   background-color: rgb(37, 189, 105);
   margin: 5px 5px 5px 5px;
+}
+
+.htmlDiv, .cssDiv, .jsDiv{
+  position: relative;
+  display: block;
 }
 
 .overlay{
@@ -143,22 +135,10 @@
   text-align: center;
 }
 
-.htmlDiv:hover .overlay {
+.htmlDiv:hover .overlay, .cssDiv:hover .overlay, .jsDiv:hover .overlay,
+.pictureDiv:hover .overlay{
   opacity: 1;
 }
-
-.cssDiv:hover .overlay {
-  opacity: 1;
-}
-
-.jsDiv:hover .overlay {
-  opacity: 1;
-}
-
-.pictureDiv:hover .overlay {
-  opacity: 1;
-}
-
 
 .footerDiv{
   float: left;
@@ -168,4 +148,6 @@
   width: 100%;
   max-width: 100%;
   background-color: blueviolet;
+  padding-top: 2%;
+  text-align: center;
 }
