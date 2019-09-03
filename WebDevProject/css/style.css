@@ -89,7 +89,53 @@
  
 }
 
+.htmlDiv{
+  float: left;
+  display: block;
+  height: 60%;
+  width: 65%;
+  background-color: rgb(175, 58, 78);
+  margin: 5px 2px 5px 5px;
+}
 
+.htmlDivCurtain{
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  float: left;
+  display: block;
+  height: 60%;
+  width: 65%;
+  background-color: rgba(99, 93, 94, 0.5);
+  margin: 5px 2px 5px 5px;
+}
+
+.htmlDivCurtain:hover{
+  background-color: rgba(99, 93, 94, 0.0);
+  /* float:right;
+  height: 100%;
+  width: 35px; */
+  /* background-color: rgba(12, 100, 93, 0.5); */
+} 
+
+
+.cssDiv{
+  float: right;
+  display: block;
+  height: 97%;
+  width: 30%;
+  background-color: rgb(189, 37, 151);
+  margin: 5px 5px 5px 2px;
+}
+
+.jsDiv{
+  float: left;
+  display: block;
+  height: 35%;
+  width: 65%;
+  background-color: rgb(37, 189, 105);
+  margin: 5px 5px 5px 5px;
+}
 
 .footerDiv{
   float: left;
