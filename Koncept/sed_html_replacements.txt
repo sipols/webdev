@@ -12,5 +12,15 @@ Replace the > character with &gt;
 
 ________________________________________
 sed -e 's/\&/\&amp/g'
-sed -e 's/\</\&lt/g'
-sed -e 's/\>/\&gt/g'
+sed -e 's/</\&lt/g'
+sed -e 's/>/\&gt/g'
+
+recursively:
+
+find . -type f -not -path '*/\.*' -exec sed -i 's/foo/bar/g' {} +
+
+_________________
+
+find . -type f -not -path '*/\.*' -exec sed -i 's/</\&lt/g' {} +
+find . -type f -not -path '*/\.*' -exec sed -i 's/>/\&gt/g' {} +
+
