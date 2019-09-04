@@ -1,5 +1,5 @@
 .headerDiv{
-  height:150px;
+  height:120px;
   /* max-height: 250px; */
   max-width: 100%;
   background-color: yellow;
@@ -12,6 +12,7 @@
   margin: auto;
   background-color: lightblue;
   margin: 1%;
+  /* transition: .5s ease; */
 }
 
 .whatisDiv h1{
@@ -20,16 +21,46 @@
 
 .menuDiv{
   float: right;
-  margin-top: 20px;
-  height: 60px;
-  width: 250px;
+  margin-top: 68px;
+  height: 50px;
+  width: 300px;
   /* margin: auto; */
   background-color: blanchedalmond;
+}
+.nav{
+  list-style: none;
+  margin:auto;
+  /* margin-top:80px; */
+  width: 94.5%;
+  float: left;
+  padding: 14px 0px 14px 16px;
+  background-color: lightgreen;
+}
+.nav li a{
+  text-decoration: none;
+  color: white;
+  margin: 0px;
+  padding: 14px 16px 14px 16px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.nav li a:hover{
+  background-color: lightcoral;
+  padding: 14px 16px 14px 16px;
+  color: rgb(9, 95, 52);
+}
+.active{
+  color: white;
+  background-color: crimson;
+  padding: 14px 16px 14px 16px;
+}
+.nav li{
+  display: inline;
 }
 
 .containerDiv{
   height: 1320px;
   max-width: 100%;
+  width: 100%;
   margin: auto;
   background-color: lightblue;
   float: left;
@@ -49,12 +80,13 @@
   float: left;
   display: block;
   height: 1300px;
+  width: 90%;
   max-width: 80%;
   background-color: lightpink;
   margin: 5px 5px 5px 5px;
 }
 
-.contentDiv h1{
+.contentDiv h1, .contentDiv h2 {
   margin: 35px;
 }
 
@@ -64,8 +96,55 @@
   margin-left: 35px;
   max-width: 92%;
   height: 270px;
-  background-color: crimson;
+  /* background-color: crimson; */
 }
+.pictureDiv2{
+  margin-left: 35%;
+}
+
+.animationContact{
+  width: 200px;
+  height: 150px;
+  border-radius: 20px;
+
+  top:110px;
+  left:0px;
+  /* important for movement */
+  position: absolute;
+  /* background-color: violet; */
+  animation-name: moving2;
+  animation-duration: 5s;
+  /* for animation to move always */
+  animation-iteration-count: infinite;
+}
+
+/* to work in safari use -webkit */
+@-webkit-keyframes moving2{
+  /* @keyframes moving{ */
+      /* top is y-axis, left is x-axis */
+      0%{
+          /* float: left; */
+          top: 110px;
+          left:0px;
+      }
+      25%{
+      /* float: left; */
+          top: 250px;
+          left:300px;
+      }
+      50%{
+          top: 350px;
+          left:600px;
+      }
+      75%{
+          top: 500px;
+          left:300px;
+      }
+      100%{
+          top: 110px;
+          left:0px;
+      }
+  }
 
 .pictureDiv img{
   max-width:100%;
@@ -76,6 +155,7 @@
 .infoDiv{
   max-width:100%;
   max-height:100%;
+  width: 90%;
   margin-left: 35px;
   margin: 25px;
   text-align: center;
@@ -89,28 +169,27 @@
   background-color: pink;
   margin: 5px 5px 5px 5px;
   margin-left: 35px;
- 
 }
 
 .htmlDiv{
   float: left;
   height: 60%;
   width: 65%;
-  background-color: rgb(175, 58, 78);
+  /* background-color: rgb(175, 58, 78); */
   margin: 5px 2px 5px 5px;
 }
 .cssDiv{
   float: right;
   height: 97%;
   width: 30%;
-  background-color: rgb(189, 37, 151);
+  /* background-color: rgb(189, 37, 151); */
   margin: 5px 5px 5px 2px;
 }
 .jsDiv{
   float: left;
   height: 35%;
   width: 65%;
-  background-color: rgb(37, 189, 105);
+  /* background-color: rgb(37, 189, 105); */
   margin: 5px 5px 5px 5px;
 }
 
@@ -143,10 +222,30 @@
 textarea{
   height: 100%;
   width: 100%;
+  font-size: 11px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
   -moz-box-sizing: border-box;    /* Firefox, other Gecko */
   box-sizing: border-box;         /* Opera/IE 8+ */
 }
+
+.htmlDiv textarea{
+  background-color: rgba(175, 58, 78, 0.5);
+}
+.cssDiv textarea{
+  background-color: rgb(189, 37, 151, 0.5);
+}
+.jsDiv textarea{
+  background-color: rgb(37, 189, 105, 0.5);
+}
+
+h1, h2, h3, h4, h5, h6, p, a{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-decoration: none;
+  color:white;
+}
+
+
 
 .footerDiv{
   float: left;
