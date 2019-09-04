@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>WebDevToolBox</title>
+</head>
+
+<body>
+
+  <div class="headerDiv">
+    <div class="whatisDiv">
+      <h1>WebDevToolBox</h1>
+    </div>
+    <div class="menuDiv">
+        <ul class="nav">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <!-- <li><a href="#">News</a></li> -->
+        </ul>
+    </div>
+  </div>
+
+  <div class="containerDiv">
+
+    <div class="leftMenuDiv">
+      <p>Choose a tool</p>
+        <ul class="navLeft">
+            <li><a href="./colorPicker.html">HTML Input Slider</a></li>
+            <li><a href="./index.html">CSS Margins</a></li>
+            <li><a href="./marginsInAnother.html">CSS Margins In Another</a></li>
+            <li><a href="./colorPicker.html">JS Events</a></li>
+  
+            <!-- <li><a href="#">News</a></li> -->
+        </ul>
+    </div>
+
+    <div class="contentDiv">
+      <h1>ColorPicker: HTML Slider and JS Events</h1>
+
+      <div class="pictureDiv">
+          <!-- <div class="overlay">IMG</div> -->
+        <img src="./img/colorPicker.jpg" alt="CodeSnippet">
+        
+      </div>
+
+      <div class="infoDiv">
+        <h3> Margins are distances between two divs. Look at the code below.
+        </h3>
+      </div>
+
+      <div class="codeContainerDiv">
+
+        <!-- <div class="htmlDivCurtain"><h1>HTML</h1></div> -->
+        <div class="htmlDiv">
+          <div class="overlay">HTML</div>
+          <!-- CODE START -->
+         
+          <textarea>
+                &lt!DOCTYPE html&gt
+                &lthtml lang="en"&gt
+                
+                &lthead&gt
+                    &ltmeta charset="UTF-8"&gt
+                    &ltmeta name="viewport" content="width=device-width, initial-scale=1.0"&gt
+                    &ltmeta http-equiv="X-UA-Compatible" content="ie=edge"&gt
+                    &ltlink rel="stylesheet" href="./style.css"&gt
+                    &lt!-- &ltlink re="stylesheet" href="./index.js"&gt --&gt
+                    &ltscript src="./index.js"&gt&lt/script&gt
+                    &lttitle&gtColor Picker&lt/title&gt
+                &lt/head&gt
+                
+                &ltbody&gt
+                    &ltdiv class="main"&gt
+                        &lth2&gtColor Picker RGBA&lt/h2&gt
+                        &ltdiv id="color-picker" class="color-picker"&gt
+                        &ltdiv id="result" class="result"&gt&lt/div&gt
+                        &lt/div&gt
+                &lt!--         
+                        &ltinput id="red" onchange="change()" type="number"&gt
+                        &ltinput id="green" onchange="change()" type="number"&gt
+                        &ltinput id="blue" onchange="change()" type="number"&gt --&gt
+                        &lt!-- &ltdiv id="result1" class="result"&gt&lt/div&gt --&gt
+                
+                        &lt!-- onchange --&gt
+                        &lt!-- &ltinput id="red" onchange="change()" value="0" type="range" min="0" max="255"&gt
+                        &ltinput id="green" onchange="change()" value="0" type="range" min="0" max="255"&gt
+                        &ltinput id="blue" onchange="change()" value="0" type="range" min="0" max="255"&gt --&gt
+                
+                        &lt!-- onmousemove --&gt
+                        &ltp&gtA&lt/p&gt
+                        &ltinput id="transparency" onmousemove="change()" value="0" type="range" min="0.01" max="1" step="0.01"&gt
+                        
+                        &ltbr&gt&ltp&gtR:&lt/p&gt
+                        &ltinput id="red" onmousemove="change()" value="0" type="range" min="0" max="255"&gt
+                        &ltbr&gt &ltp&gtG&lt/p&gt
+                        &ltinput id="green" onmousemove="change()" value="0" type="range" min="0" max="255"&gt
+                        &ltbr&gt &ltp&gtB&lt/p&gt
+                        &ltinput id="blue" onmousemove="change()" value="0" type="range" min="0" max="255"&gt
+                
+                        
+                        &ltinput type="button" name="" id="button" value="log it" onclick="change()"&gt
+                
+                        &lth2&gtCircle&lt/h2&gt
+                        &ltdiv id="circle" class="circle"&gt&lt/div&gt
+                        &ltp&gtChange the width of the circle&lt/p&gt
+                        &ltinput id="circle-width" onmousemove="change()" value="0" type="range" min="10" max="1000" step="1"&gt
+                        &ltbr&gt
+                
+                    &lt/div&gt
+                
+                
+                &lt/body&gt
+                
+                &lt/html&gt
+            </textarea>
+          <!-- CODE END -->
+          
+        </div>
+        <div class="cssDiv">
+          <div class="overlay">CSS</div>
+        <textarea>
+                .color-picker{
+                    width: 100%;
+                    height: 250px;
+                    border:1px solid lightpink;
+                    margin: auto;
+                    border-radius: 40px;
+                }
+                
+                p{
+                    display: inline;
+                }
+                
+                h2{
+                    background-color: lightpink;
+                    color: darkmagenta;
+                }
+                
+                .input{
+                    border:1px solid lightcoral;
+                }
+                
+                #circle{
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 50%;
+                    border:1px solid lightcoral;
+                    background-color: blanchedalmond;
+                
+                }
+                
+                /* input[type=range]::-webkit-slider-runnable-track {
+                    width: 100%;
+                    height: 8.4px;
+                    cursor: pointer;
+                    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+                    background: #3071a9;
+                    border-radius: 1.3px;
+                    border: 0.2px solid #010101;
+                  } */
+                
+                .result{
+                    width:200px;
+                    margin:auto;
+                    margin-left: 25%;
+                    margin-top: 25%;
+                    background-color: rgba(240, 240, 240, 0.5);
+                    border-radius: 50px;
+                    text-align: center;
+                
+                }
+                
+                .main{
+                    width: 50%;
+                    margin:auto;
+                }
+                </textarea>
+        </div>
+        
+        <div class="jsDiv">
+            <div class="overlay">JS</div>
+            <textarea>
+                    function change(){
+                        // document.getElementById("red").value;
+                        var red = document.getElementById("red").value;
+                        var green = document.getElementById("green").value;
+                        var blue = document.getElementById("blue").value;
+                        var transparency = document.getElementById("transparency").value;
+                        var circleWidth = document.getElementById("circle-width").value;
+                    
+                        console.log("Red: " + red);
+                        console.log("Green: " + green);
+                        console.log("Blue: " + blue);
+                        console.log("Transparency: " + transparency);
+                        console.log("Circle width: " +circleWidth);
+                    
+                        var x = true;
+                        console.log(typeof red); //type of value always string
+                        console.log(typeof x);
+                        console.log(typeof change);
+                    
+                        document.getElementById("result").innerText="rgba("+red+","+green+","+blue+","+transparency+")";
+                        // document.getElementById("transparency").innerText=
+                        document.getElementById("color-picker").style.backgroundColor="rgba("+red+","+green+","+blue+","+transparency+")";
+                    
+                        // for values remember to add % or px or other measurement values!
+                        // remembr to get the element not the attribute!
+                        document.getElementById("circle").style.width = circleWidth+"%";
+                    }
+            </textarea>
+        </div>
+
+      </div>
+    </div>
+
+
+  </div>
+
+
+  <div class="footerDiv">Copyright Sipols</div>
+</body>
+
+</html>

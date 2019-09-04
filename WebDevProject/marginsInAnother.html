@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>WebDevToolBox</title>
+</head>
+
+<body>
+
+  <div class="headerDiv">
+    <div class="whatisDiv">
+      <h1>WebDevToolBox</h1>
+    </div>
+    <div class="menuDiv">
+        <ul class="nav">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <!-- <li><a href="#">News</a></li> -->
+        </ul>
+    </div>
+  </div>
+
+  <div class="containerDiv">
+
+    <div class="leftMenuDiv">
+      <p>Choose a tool</p>
+        <ul class="navLeft">
+                <li><a href="./colorPicker.html">HTML Input Slider</a></li>
+                <li><a href="./index.html">CSS Margins</a></li>
+                <li><a href="./marginsInAnother.html">CSS Margins In Another</a></li>
+                <li><a href="./colorPicker.html">JS Events</a></li>
+  
+            <!-- <li><a href="#">News</a></li> -->
+        </ul>
+    </div>
+
+    <div class="contentDiv">
+      <h1>CSS Margins: One In Another Divs</h1>
+
+      <div class="pictureDiv">
+          <!-- <div class="overlay">IMG</div> -->
+        <img src="./img/marginsInAnother.jpg" alt="CodeSnippet">
+        
+      </div>
+
+      <div class="infoDiv">
+        <h3> Margins are distances between two divs. Look at the code below.
+        </h3>
+      </div>
+
+      <div class="codeContainerDiv">
+
+        <!-- <div class="htmlDivCurtain"><h1>HTML</h1></div> -->
+        <div class="htmlDiv">
+          <div class="overlay">HTML</div>
+          <!-- CODE START -->
+         
+          <textarea>
+              &lt!DOCTYPE html&gt
+                &lthtml lang="en"&gt
+                &lthead&gt
+                    &ltmeta charset="UTF-8"&gt
+                    &ltmeta name="viewport" content="width=device-width, initial-scale=1.0"&gt
+                    &ltmeta http-equiv="X-UA-Compatible" content="ie=edge"&gt
+                    &ltlink rel="stylesheet" href="./css/styleMarginTrain.css"&gt
+                    &lttitle&gtMargin Training&lt/title&gt
+                &lt/head&gt
+                &ltbody&gt
+                
+                    &ltdiv class="centerDivDotted"&gtGreen Dotted
+                
+                            &ltdiv class="centerDivInside"&gtInside Div
+                                    &ltdiv class="rightSubDiv"&gt&lt/div&gt
+                
+                            &lt/div&gt
+                    &lt/div&gt
+                    
+                    
+                &lt/body&gt
+                &lt/html&gt
+            </textarea>
+          <!-- CODE END -->
+          
+        </div>
+        <div class="cssDiv">
+          <div class="overlay">CSS</div>
+        <textarea>
+                .centerDivDotted{
+                    margin: auto;
+                    margin-top: 75px;
+                    width: 500px;
+                    height: 300px;
+                    border: 15px dotted green;
+                }
+                
+                .centerDivInside{
+                    margin: auto;
+                    width: 80%;
+                    height: 80%;
+                    border: 10px solid violet;
+                }
+                
+                .rightSubDiv{
+                    /* in any direction:
+                     top-, right- bottom- left-*/
+                    margin: 5% 0% 5% 45%;
+                    width: 50%;
+                    height: 150px;
+                    border: 10px solid blue;
+                }
+                </textarea>
+        </div>
+        
+        <div class="jsDiv">
+            <div class="overlay">JS</div>
+        </div>
+
+      </div>
+    </div>
+
+
+  </div>
+
+
+  <div class="footerDiv">Copyright Sipols</div>
+</body>
+
+</html>

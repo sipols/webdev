@@ -87,9 +87,34 @@
   float: left;
   height: 1300px;
   max-width: 40%;
-  width: 150px;
+  width: 170px;
   margin: 5px;
   background-color: lightseagreen;
+  display: block;
+}
+
+.navLeft{
+  list-style: none;
+  margin:auto;
+  /* margin-top:80px; */
+  width: 94.5%;
+  float: left;
+  padding:  1px 6px 1px 6px;
+  background-color: lightgreen;
+}
+.navLeft li a{
+  text-decoration: none;
+  color: white;
+  margin: 0px;
+  padding:  1px 6px 1px 6px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.navLeft li a:hover{
+  background-color: lightcoral;
+  padding:   1px 6px 1px 6px;
+  color: rgb(9, 95, 91);
+}
+.navLeft li{
   display: block;
 }
 
@@ -114,6 +139,10 @@
   max-width: 92%;
   height: 220px;
   /* background-color: crimson; */
+}
+
+.pictureDiv img{
+  width: 100%;
 }
 .pictureDiv2{
   margin-left: 35%;
