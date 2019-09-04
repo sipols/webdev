@@ -2,7 +2,8 @@
   height:120px;
   /* max-height: 250px; */
   max-width: 100%;
-  background-color: yellow;
+  /* background-color: yellow; */
+  background-color: rgb(11, 112, 79);
 }
 
 .whatisDiv{
@@ -12,11 +13,27 @@
   margin: auto;
   background-color: lightblue;
   margin: 1%;
-  /* transition: .5s ease; */
+  animation-name: someMovement;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
 }
 
 .whatisDiv h1{
   text-align: center;
+}
+
+/* animation from start to destination */
+@keyframes someMovement{
+  from{
+      background-color: rgb(11, 112, 79);
+       /* change width from this */
+       width: 390px;
+   
+  }
+  to{
+      background-color: aquamarine;
+
+  }
 }
 
 .menuDiv{
@@ -95,11 +112,20 @@
   margin: 15px;
   margin-left: 35px;
   max-width: 92%;
-  height: 270px;
+  height: 220px;
   /* background-color: crimson; */
 }
 .pictureDiv2{
   margin-left: 35%;
+  
+}
+.pictureDiv22 img{
+  position: relative;
+  margin: 15px;
+  margin-left: 35px;
+  max-width: 92%;
+  height: 150px;
+  
 }
 
 .animationContact{
@@ -115,6 +141,17 @@
   animation-name: moving2;
   animation-duration: 5s;
   /* for animation to move always */
+  animation-iteration-count: infinite;
+}
+
+.animationContact22{
+  width: 200px;
+  height: 150px;
+  top:110px;
+  left:0px;
+  position: absolute;
+  animation-name: moving22;
+  animation-duration: 5s;
   animation-iteration-count: infinite;
 }
 
@@ -145,6 +182,33 @@
           left:0px;
       }
   }
+
+  @-webkit-keyframes moving22{
+    /* @keyframes moving{ */
+        /* top is y-axis, left is x-axis */
+        0%{
+            /* float: left; */
+            top: 110px;
+            left:0px;
+        }
+        25%{
+        /* float: left; */
+            top: 450px;
+            left:800px;
+        }
+        50%{
+            top: 850px;
+            left:700px;
+        }
+        75%{
+            top: 400px;
+            left:400px;
+        }
+        100%{
+            top: 110px;
+            left:0px;
+        }
+    }
 
 .pictureDiv img{
   max-width:100%;
@@ -229,6 +293,20 @@ textarea{
   box-sizing: border-box;         /* Opera/IE 8+ */
 }
 
+table, tr, td{
+  border: solid 5px rgb(37, 189, 105, 0.5);
+  margin: auto;
+  padding: 1px;
+}
+
+tr:nth-child(2n){
+  /* 2n == even */
+  background-color: lightseagreen;
+}
+tr:hover{
+  background-color: lightsalmon;
+}
+
 .htmlDiv textarea{
   background-color: rgba(175, 58, 78, 0.5);
 }
@@ -244,8 +322,6 @@ h1, h2, h3, h4, h5, h6, p, a{
   text-decoration: none;
   color:white;
 }
-
-
 
 .footerDiv{
   float: left;

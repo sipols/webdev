@@ -1,0 +1,42 @@
+html{
+    font-size: 62.5%;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.panner{
+    background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url('./imgs/hero.jpg') no-repeat 60% 25%;
+    background-attachment: fixed;
+    height: 40rem;
+    height: 400px;
+    background-color: lightcoral;
+    margin: 5px 5px 5px 5px;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 5%;
+    color: antiquewhite;
+    font-size: 30px;
+}
+
+
+.footer{
+   
+    height: 40rem;
+    height: 150px;
+    background-color: lightcoral;
+    margin: 5px 5px 5px 5px;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 5%;
+    color: antiquewhite;
+    font-size: 30px;
+}
+
+[class*="col"] p {
+    font-size: 2rem;
+}
+[class*="col"] h3 {
+    font-size: 3rem;
+}

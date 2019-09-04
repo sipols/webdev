@@ -2,67 +2,91 @@
 <html lang="en" dir="ltr">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="./css/style.css">
-  <title>WebDevToolBox</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/style.css">
+    <script>
+        // this area is for Java Script code
+        function alertNigel() {
+            alert("You caught Nigel! Now go to my GitHub!");
+            console.log("You caught Nigel!");
+        }
+        // does not work in smartphones
+
+    </script>
+    <title>WebDevToolBox</title>
 </head>
 
 <body>
 
-  <div class="headerDiv">
-    <div class="whatisDiv">
-      <h1>WebDev ToolBox</h1>
-    </div>
-    <div class="menuDiv">
-        <ul class="nav">
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./about.html">About</a></li>
-            <li><a class="active" href="./contact.html">Contact</a></li>
-            <!-- <li><a href="#">News</a></li> -->
-        </ul>
-    </div>
-  </div>
-
-  <div class="containerDiv">
-
-    <div class="leftMenuDiv">
+    <div class="headerDiv">
+        <div class="whatisDiv">
+            <h1>WebDevToolBox</h1>
+        </div>
+        <div class="menuDiv">
+            <ul class="nav">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a class="active" href="./contact.html">Contact</a></li>
+                <!-- <li><a href="#">News</a></li> -->
+            </ul>
+        </div>
     </div>
 
-    <div class="contentDiv">
-      <h1>Contact</h1>
-      <h2 style="text-align: center">Contact me on <a href="https://github.com/sipols">GitHub - Sipols</a>!</h2>
-     
-      <div class="pictureDiv2">
-      <div class="tenor-gif-embed" data-postid="4000371" data-share-method="host" data-width="45%" data-aspect-ratio="0.7016129032258065">
-          <a href="https://tenor.com/view/the-wild-thornberrys-nigel-smashing-smile-amazed-gif-4000371">Smashing Smashing GIF</a> from
-           <a href="https://tenor.com/search/thewildthornberrys-gifs">Thewildthornberrys GIFs</a></div>
-      <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+    <div class="containerDiv">
+
+        <div class="leftMenuDiv">
+        </div>
+
+        <div class="contentDiv">
+            <h1>Contact</h1>
+            <h2 style="text-align: center">Find me on <a href="https://github.com/sipols">GitHub - Sipols</a>!</h2>
+
+            <div class="pictureDiv2">
+                <div class="tenor-gif-embed" data-postid="4000371" data-share-method="host" data-width="45%"
+                    data-aspect-ratio="0.7016129032258065">
+                    <a href="https://tenor.com/view/the-wild-thornberrys-nigel-smashing-smile-amazed-gif-4000371">Smashing
+                        Smashing GIF</a> from
+                    <a href="https://tenor.com/search/thewildthornberrys-gifs">Thewildthornberrys GIFs</a></div>
+                <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+            </div>
+
+            <div class="pictureDiv animationContact">
+
+                <input class="pictureDiv" type="image" onclick="alertNigel()" src="./img/nigel.png" alt="nigel">
+                <p style="color: red">Catch me!</p>
+            </div>
+
+            <div class="pictureDiv22 animationContact22">
+                <!-- <div class="overlay">IMG</div> -->
+                <a  href="https://github.com/sipols">
+                    <img src="./img/nigel22.png" alt="nigel22">
+                    <p style="color: red">Come along!</p></a>
+                    
+            </div>
+
+            <div class="infoDiv">
+                <h3> Send me a message:
+                </h3>
+                <input type="text"> <button>Send</button>
+
+                <h3>Did you catch Nigel?</h3>
+                <input type="radio">Yes
+                <input type="radio">No
+                <input type="radio">Maybe
+                <button>Send</button>
+            </div>
+
+
+        </div>
+
+
     </div>
-     
-      <div class="pictureDiv animationContact">
-          <!-- <div class="overlay">IMG</div> -->
-        <a href="https://github.com/sipols">
-        <img src="./img/nigel.png" alt="nigel">
-        <br>
-         <p>Catch me!</p></a>
-        
-      </div>
-
-      <!-- <div class="infoDiv">
-        <h3> Text
-        </h3>
-      </div> -->
 
 
-    </div>
+    <div class="footerDiv">Copyright Sipols</div>
 
-
-  </div>
-
-
-  <div class="footerDiv">Copyright Sipols</div>
 </body>
 
 </html>

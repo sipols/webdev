@@ -1,0 +1,25 @@
+.normal-div{
+    width: 200px;
+    height: 200px;
+    background-color: blanchedalmond;
+    /* cool transition effect!!! */
+    /* -webkit-transition: width 2s; Safari prior 6.1  and other bworsers*/
+    /* duration of change of state */
+    transition: 500ms;
+    /* delay after transition how long to wait to change */
+   
+}
+
+.img{
+    max-width: 100%;
+    height: auto;
+
+}
+
+.normal-div:hover{
+    transition-delay: 1s;
+    background-color: grey;
+    width: 800px;
+    height: 500px;
+}
+

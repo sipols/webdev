@@ -13,7 +13,7 @@
 
     <div class="headerDiv">
         <div class="whatisDiv">
-            <h1>WebDev ToolBox</h1>
+            <h1>WebDevToolBox</h1>
         </div>
         <div class="menuDiv">
             <ul class="nav">
@@ -31,13 +31,13 @@
         </div>
 
         <div class="contentDiv">
-            <h1>WebDevToolBox - Welcome!</h1>
+            <h1>About</h1>
 
-            <div class="pictureDiv">
+            <!-- <div class="pictureDiv">
                 <div class="overlay">IMG</div>
                 <img src="./img/CodeSnippet.JPG" alt="CodeSnippet">
 
-            </div>
+            </div> -->
 
             <div class="infoDiv">
                 <h3>In this website you can find HTML, CSS, JS code examples from a Web Dev course.
@@ -66,107 +66,274 @@
                     </tr>
                     <tr>
                         <td>Images</td>
-                        <td>ImageWork</td>
+                        <td>ImageWork Responsive</td>
                         <td>-</td>
                     </tr>
 
                     <tr>
                         <td>Div</td>
-                        <td>Transition</td>
+                        <td>Transition Animation</td>
                         <td>-</td>
                     </tr>
                     <tr>
                         <td>Links</td>
                         <td>ResponsiveMenu</td>
-                        <td>-</td>
+                        <td>Arrays</td>
                     </tr>
+                    <tr>
+                            <td>Links</td>
+                            <td>ResponsiveMenu</td>
+                            <td>Events Functions</td>
+                        </tr>
                 </table>
             </div>
 
+           
             <div class="codeContainerDiv">
+                    <h3>Below are example codes how it will be seen on the left menu for HTML CSS and JS.</h3>
 
-                <!-- <div class="htmlDivCurtain"><h1>HTML</h1></div> -->
-                <div class="htmlDiv">
-                    <div class="overlay">HTML</div>
-                    <!-- CODE START -->
 
-                    <textarea>&lt!DOCTYPE html&gt
-              &lthtml lang="en"&gt
-              &lthead&gt
-                  &ltmeta charset="UTF-8"&gt
-                  &ltmeta name="viewport" content="width=device-width, initial-scale=1.0"&gt
-                  &ltmeta http-equiv="X-UA-Compatible" content="ie=edge"&gt
-                  &lttitle&gtLatvian Flag&lt/title&gt
-              &lt/head&gt
-              &ltbody&gt
-              
-                  &ltdiv class="bckgrnd"&gt
-                      &ltdiv class=flag&gt
-                          &ltdiv class="red element"&gt&lt/div&gt
-                          &ltdiv class="white element"&gt&lt/div&gt
-                          &ltdiv class="red element"&gt&lt/div&gt
-                       &lt/div&gt
-              
-                       &ltdiv class=flag&gt
-                              &ltdiv class="red "&gt&lt/div&gt
-                              &ltdiv class="white "&gt&lt/div&gt
-                              &ltdiv class="red "&gt&lt/div&gt
-                           &lt/div&gt
-                  &lt/div&gt
-              
-                  
-              &lt/body&gt
-              &lt/html&gt</textarea>
-                    <!-- CODE END -->
-
-                </div>
-                <div class="cssDiv">
-                    <div class="overlay">CSS</div>
-                    <textarea>              &ltstyle&gt
-            div{
-                width: 240px;
-                height: 60px;
-            }
-        
-            body{
-                /* cann scroll with fixed*/
-                background-attachment: fixed;
-                background-image: url("./images/sky.jpg");
-                
-            }
-            .bckgrnd{
-                width: 800px;
-                height: 500px;
-                /* background-image: url("./images/sky.jpg"); */
-                /* position:fixed; */
-        
-            }
-        
-            .flag{
-                margin-left: 20%;
-                margin-top: 20%;
-                position: relative;
-            }
-                .red{
-                    background-color: darkred;
-                }
-        
-                .white{
-                    background-color: white;
-                    height: 30px;
-                }
-        
-                .element{
-                    border-radius: 20px 0px 20px 0px;
-                }
-            &lt/style&gt</textarea>
-                </div>
-
-                <div class="jsDiv">
-                    <div class="overlay">JS</div>
-                </div>
-
-            </div>
+                    <!-- <div class="htmlDivCurtain"><h1>HTML</h1></div> -->
+                    <div class="htmlDiv">
+                      <div class="overlay">HTML</div>
+                      <!-- CODE START -->
+                     
+                      <textarea>&lt!DOCTYPE html&gt
+                          &lthtml lang="en"&gt
+                          &lthead&gt
+                              &ltmeta charset="UTF-8"&gt
+                              &ltmeta name="viewport" content="width=device-width, initial-scale=1.0"&gt
+                              &ltmeta http-equiv="X-UA-Compatible" content="ie=edge"&gt
+                              &lttitle&gtLatvian Flag&lt/title&gt
+                          &lt/head&gt
+                          &ltbody&gt
+                          
+                              &ltdiv class="bckgrnd"&gt
+                                  &ltdiv class=flag&gt
+                                      &ltdiv class="red element"&gt&lt/div&gt
+                                      &ltdiv class="white element"&gt&lt/div&gt
+                                      &ltdiv class="red element"&gt&lt/div&gt
+                                   &lt/div&gt
+                          
+                                   &ltdiv class=flag&gt
+                                          &ltdiv class="red "&gt&lt/div&gt
+                                          &ltdiv class="white "&gt&lt/div&gt
+                                          &ltdiv class="red "&gt&lt/div&gt
+                                       &lt/div&gt
+                              &lt/div&gt
+                          
+                              
+                          &lt/body&gt
+                          &lt/html&gt</textarea>
+                      <!-- CODE END -->
+                      
+                    </div>
+                    <div class="cssDiv">
+                      <div class="overlay">CSS</div>
+                    <textarea>html{
+                            /* to allow smooth scrolling in the whole site */
+                            scroll-behavior: smooth;
+                            background: linear-gradient(rgba(61, 173, 218, 0.5),rgba(199, 17, 153, 0.5)
+                            ) no-repeat;
+                            width: 100%;
+                          } 
+                        
+                        body, footer{
+                            background: linear-gradient(rgba(226, 241, 247, 0.5),rgba(129, 9, 99, 0.5)
+                            ) no-repeat 100% 100%;
+                          }
+                        
+                        .row
+                        {
+                            float: left;
+                            /* margin: auto; */
+                            height: auto;
+                            width:100%;
+                        }
+                        
+                        .banner{
+                            background-image:linear-gradient(rgba(18, 52, 206, 0.1),
+                             rgba(129, 9, 99, 0.4)), url("../img/city.jpg");
+                            /* max-width: 100%; */
+                            width: 100%;
+                            /* to cover the whole banner */
+                            background-size: cover;
+                            background-position: cover;
+                            background-attachment: fixed;
+                            height: auto;
+                            text-align: center;
+                            color: antiquewhite;
+                            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                            color: white;
+                        }
+                        
+                        .top{
+                            height: 350px;
+                        }
+                        
+                        .margin-div{
+                            margin: 2%;
+                            position: absolute;
+                            width: 40%;
+                        
+                        }
+                        
+                        .round-button{
+                            height: 100px;
+                            width: 625px;
+                            border-radius: 50px;
+                            background-color: rgba(129, 9, 99, 0.9);
+                            text-align: center;
+                            /* box-align: left;
+                            padding: auto; */
+                            padding-top: 43px;
+                            /* padding-block: auto; */
+                            /* padding: 1px 2px 2px 2px; */
+                            /* margin: 0px 10px 10px 20px; */
+                            position: absolute;
+                            top:20%;
+                            left:7%;
+                            font-size: 100%;
+                            box-shadow: rgba(63, 58, 58,0.8) 0px 0px 20px;
+                          
+                        }
+                        
+                        .col{
+                            color: white;
+                            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                            text-align: center;
+                            width: 250px;
+                            /* height: 250px; */
+                            margin: 3%;
+                            padding: 15px;
+                            /* such paddin is not responsive! Do not use! */
+                            /* padding: 20px 40px 20px 40px; */
+                            padding: auto;
+                            border-radius: 40px;
+                            background-color:  rgba(129, 9, 99, 0.8);
+                            display: block;
+                            float: left;
+                            box-shadow: rgba(63, 58, 58,0.9) 1px 1px 10px;
+                           
+                        }
+                        
+                        h1{
+                            display: inline;
+                            text-align: center;
+                        }
+                        
+                        .appear{
+                            display: none;
+                            color:  rgba(129, 9, 99, 0.7);
+                            background-color: rgba(255, 255, 255, 0.5);
+                            border-radius: 20px;
+                        }
+                        
+                        @media only screen and (max-width:1400px){
+                            .banner{
+                                height: 300px;
+                            }
+                            .row{
+                                /* height: 1100px; */
+                                height: auto;
+                            }
+                        
+                            /* .round-button h1{
+                                font-size: 100%;
+                            } */
+                        }
+                        
+                        @media only screen and (max-width:700px){
+                            .round-button{
+                                width: 100%;
+                            }
+                            /* .round-button h1{
+                                font-size: 100%;
+                            } */
+                            .description{
+                                display: none;
+                            }
+                            .appear{
+                                display: block;
+                            }
+                        }
+                        
+                        /* @media only screen and (max-width: 600px){
+                            [class*="col"] {
+                                width:100%;
+                            }
+                        
+                        }
+                        @media only screen and (max-width: 992px){
+                            .col-4, .col-3, .col-2, .col-1, .col-7, .col-8, 
+                            .col-5,
+                            .col-9, .col-10, .col-11, .col-12,
+                            .right-sidebar, .left-sidebar, .content-div
+                            {
+                                width:100%;
+                            } */
+                        
+                        /* 
+                        table tr td:nth-child(2n){
+                            
+                            background-color:  rgba(129, 9, 99, 0);
+                        } */
+                        
+                        </textarea>
+                    </div>
+                    
+                    <div class="jsDiv">
+                        <div class="overlay">JS</div>
+                        <textarea>
+                                // saving variable to look at all h1 elems
+                                var hTags = document.getElementsByTagName("h1");
+                                // text in the tag
+                                hTags[0].innerText = "First tag h1";
+                                //color
+                                hTags[0].style.color = "red";
+                                
+                                hTags[1].innerText = "Second tag h1";
+                                hTags[1].style.color = "blue";
+                                
+                                hTags[2].innerText = "Third tag h1";
+                                hTags[2].style.color = "yellow";
+                                
+                                hTags[3].innerText = "Fourth tag h1";
+                                hTags[3].style.color = "green";
+                                
+                                hTags[4].innerText = "5 tag h1";
+                                hTags[4].style.color = "grey";
+                                
+                                hTags[5].innerText = "6 tag h1";
+                                hTags[5].style.color = "lightcoral";
+                                hTags[5].remove(); // to remove an element
+                                
+                                hTags[6].innerText = "7 tag h1";
+                                hTags[6].style.color = "orange";
+                                
+                                hTags[7].innerText = "8 tag h1";
+                                hTags[7].style.color = "purple";
+                                
+                                hTags[8].innerText = "9 tag h1";
+                                hTags[8].style.color = "violet";
+                                
+                                //inner HTML
+                                hTags[hTags.length-1].innerHTML = "<i>Last element h1</i>";
+                                hTags[hTags.length-1].style.color = "khaki";
+                                
+                                console.log(hTags);
+                                console.log(hTags[1]);
+                                console.log(hTags[3]);
+                                
+                                var h3Tags = document.getElementsByTagName("h3");
+                                h3Tags[0].innerText = "First tag h3";
+                                console.log(h3Tags[0]);
+                                /////////////////
+                                var newTag = document.createElement("span");
+                                </textarea>
+                    </div>
+            
+                  </div>
         </div>
 
 
@@ -174,6 +341,7 @@
 
 
     <div class="footerDiv">Copyright Sipols</div>
+ 
 </body>
 
 </html>

@@ -1,0 +1,149 @@
+html{
+    /* to allow smooth scrolling in the whole site */
+    scroll-behavior: smooth;
+    background: linear-gradient(rgba(61, 173, 218, 0.5),rgba(199, 17, 153, 0.5)
+    ) no-repeat;
+    width: 100%;
+  } 
+
+body, footer{
+    background: linear-gradient(rgba(226, 241, 247, 0.5),rgba(129, 9, 99, 0.5)
+    ) no-repeat 100% 100%;
+  }
+
+.row
+{
+    float: left;
+    /* margin: auto; */
+    height: auto;
+    width:100%;
+}
+
+.banner{
+    background-image:linear-gradient(rgba(18, 52, 206, 0.1),
+     rgba(129, 9, 99, 0.4)), url("../img/city.jpg");
+    /* max-width: 100%; */
+    width: 100%;
+    /* to cover the whole banner */
+    background-size: cover;
+    background-position: cover;
+    background-attachment: fixed;
+    height: auto;
+    text-align: center;
+    color: antiquewhite;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+.top{
+    height: 350px;
+}
+
+.margin-div{
+    margin: 2%;
+    position: absolute;
+    width: 40%;
+
+}
+
+.round-button{
+    height: 100px;
+    width: 625px;
+    border-radius: 50px;
+    background-color: rgba(129, 9, 99, 0.9);
+    text-align: center;
+    /* box-align: left;
+    padding: auto; */
+    padding-top: 43px;
+    /* padding-block: auto; */
+    /* padding: 1px 2px 2px 2px; */
+    /* margin: 0px 10px 10px 20px; */
+    position: absolute;
+    top:20%;
+    left:7%;
+    font-size: 100%;
+    box-shadow: rgba(63, 58, 58,0.8) 0px 0px 20px;
+  
+}
+
+.col{
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    width: 250px;
+    /* height: 250px; */
+    margin: 3%;
+    padding: 15px;
+    /* such paddin is not responsive! Do not use! */
+    /* padding: 20px 40px 20px 40px; */
+    padding: auto;
+    border-radius: 40px;
+    background-color:  rgba(129, 9, 99, 0.8);
+    display: block;
+    float: left;
+    box-shadow: rgba(63, 58, 58,0.9) 1px 1px 10px;
+   
+}
+
+h1{
+    display: inline;
+    text-align: center;
+}
+
+.appear{
+    display: none;
+    color:  rgba(129, 9, 99, 0.7);
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+}
+
+@media only screen and (max-width:1400px){
+    .banner{
+        height: 300px;
+    }
+    .row{
+        /* height: 1100px; */
+        height: auto;
+    }
+
+    /* .round-button h1{
+        font-size: 100%;
+    } */
+}
+
+@media only screen and (max-width:700px){
+    .round-button{
+        width: 100%;
+    }
+    /* .round-button h1{
+        font-size: 100%;
+    } */
+    .description{
+        display: none;
+    }
+    .appear{
+        display: block;
+    }
+}
+
+/* @media only screen and (max-width: 600px){
+    [class*="col"] {
+        width:100%;
+    }
+
+}
+@media only screen and (max-width: 992px){
+    .col-4, .col-3, .col-2, .col-1, .col-7, .col-8, 
+    .col-5,
+    .col-9, .col-10, .col-11, .col-12,
+    .right-sidebar, .left-sidebar, .content-div
+    {
+        width:100%;
+    } */
+
+/* 
+table tr td:nth-child(2n){
+    
+    background-color:  rgba(129, 9, 99, 0);
+} */
+

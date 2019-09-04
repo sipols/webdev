@@ -1,0 +1,98 @@
+&lt!DOCTYPE html&gt
+&lthtml lang="en"&gt
+&lthead&gt
+    &ltmeta charset="UTF-8"&gt
+    &ltmeta name="viewport" content="width=device-width, initial-scale=1.0"&gt
+    &ltmeta http-equiv="X-UA-Compatible" content="ie=edge"&gt
+    &lttitle&gtEncapsulationSubs&lt/title&gt
+
+    &ltstyle&gt
+
+    /* make the son inside father on right bottom corner */
+    .father{
+    /* with % the div takes % of the one up size of it - encapsulation levels */
+        width: 50%;
+        /* cannot put height on % as there is infinity of scrolling possible */
+        height: 300px;
+        background-color: brown;
+        position: relative;
+    }
+
+    .son{
+        /* with % the div takes % of the one up size of it - encapsulation levels */
+        width: 30%;
+        height: 40%;
+        background-color: rgb(167, 206, 62);
+        /* margin-left: auto; */
+        /* offset-position: 100%; */
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        
+    }
+
+    /* make the inner daughter be at the right bottom corner of mother */
+    .mother{
+        width: 50%;
+        height: 300px;
+        background-color: chocolate;
+    }
+
+    .daughter{
+        width: 30%;
+        height: 40%;
+        background-color:rgb(8, 143, 167);
+        float: right;
+        margin-top: 49.5%;
+    }
+    p{
+        color: rgb(196, 36, 36);
+    }
+
+    .first{
+        /* hiding elements */
+        /* display: none; */
+        /* display: inline; */
+        float:left;
+        color: darkturquoise;
+    }
+    
+    .second{
+        /* hiding elements */
+        /* display: inline; */
+        overflow: hidden;
+        background-color: darkviolet;
+    }
+
+    div{
+        width: 50px;
+        height: 20px;  
+    }
+    &lt/style&gt
+
+&lt/head&gt
+&ltbody&gt
+
+    &ltp class="first"&gtFirstParagraph&lt/p&gt
+    &ltp class="second"&gtSecond Paragraph&lt/p&gt
+
+&lt!-- show two divs side by side --&gt
+&ltdiv class="first"&gtfirst div&lt/div&gt &ltdiv class="second"&gtsecond div&lt/div&gt
+
+    &ltdiv class="father"&gt
+        &lt!-- /* with % the div takes % of the one up size of it - encapsulation levels */ --&gt
+        &ltdiv class="son"&gt&ltp&gt
+            sub div
+        &lt/p&gt&lt/div&gt
+    &lt/div&gt
+
+    &ltp&gt&lt/p&gt
+
+    &ltdiv class="mother"&gt
+            &lt!-- /* with % the div takes % of the one up size of it - encapsulation levels */ --&gt
+            &ltdiv class="daughter"&gt&ltp&gt
+                sub div
+            &lt/p&gt&lt/div&gt
+        &lt/div&gt
+&lt/body&gt
+&lt/html&gt

@@ -1,0 +1,18 @@
+.text-div{
+    margin-left: 50px;
+    width: 75%;
+    height: auto;
+    background-color: lightgreen;
+    padding: 30px;
+    border: solid 20px lightcoral;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 2px;
+    color: white;
+    /* outline-color: 2px black; */
+}
+
+.tab{
+    text-indent: 20px;
+    /* display: inline; */
+    line-height: 0%;
+}

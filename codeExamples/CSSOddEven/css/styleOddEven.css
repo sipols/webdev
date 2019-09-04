@@ -1,0 +1,52 @@
+p:nth-child(2n+1){
+    /* selecting odd paragraph with function n-th child */
+    color:orange;
+}
+
+p:nth-child(2n){
+    color:green;
+}
+
+p:nth-child(odd){
+    color:red;
+}
+
+p:nth-child(even){
+    color:orange;
+}
+
+
+p:nth-child(4n+1){
+    color:blanchedalmond;
+}
+
+table{
+    width: 90%;
+    border: 3px solid lightgrey;
+    margin: auto;
+}
+
+td{
+    border: 1px solid lightpink;
+}
+
+th{
+    border: 1px solid lightgreen;
+    background-color: darksalmon;
+}
+
+tr:nth-child(odd){
+    /* 2n+1 == odd */
+    background-color: aqua;
+}
+
+tr:nth-child(2n){
+    /* 2n == even */
+    background-color: lightseagreen;
+}
+
+tr:hover{
+    background-color: lightsalmon;
+
+}
+

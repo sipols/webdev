@@ -1,0 +1,56 @@
+&lt!DOCTYPE html&gt
+&lthtml lang="en"&gt
+
+&lthead&gt
+    &ltmeta charset="UTF-8"&gt
+    &ltmeta name="viewport" content="width=device-width, initial-scale=1.0"&gt
+    &ltmeta http-equiv="X-UA-Compatible" content="ie=edge"&gt
+    &ltlink rel="stylesheet" href="./style.css"&gt
+    &lt!-- &ltlink re="stylesheet" href="./index.js"&gt --&gt
+    &ltscript src="./index.js"&gt&lt/script&gt
+    &lttitle&gtColor Picker&lt/title&gt
+&lt/head&gt
+
+&ltbody&gt
+    &ltdiv class="main"&gt
+        &lth2&gtColor Picker RGBA&lt/h2&gt
+        &ltdiv id="color-picker" class="color-picker"&gt
+        &ltdiv id="result" class="result"&gt&lt/div&gt
+        &lt/div&gt
+&lt!--         
+        &ltinput id="red" onchange="change()" type="number"&gt
+        &ltinput id="green" onchange="change()" type="number"&gt
+        &ltinput id="blue" onchange="change()" type="number"&gt --&gt
+        &lt!-- &ltdiv id="result1" class="result"&gt&lt/div&gt --&gt
+
+        &lt!-- onchange --&gt
+        &lt!-- &ltinput id="red" onchange="change()" value="0" type="range" min="0" max="255"&gt
+        &ltinput id="green" onchange="change()" value="0" type="range" min="0" max="255"&gt
+        &ltinput id="blue" onchange="change()" value="0" type="range" min="0" max="255"&gt --&gt
+
+        &lt!-- onmousemove --&gt
+        &ltp&gtA&lt/p&gt
+        &ltinput id="transparency" onmousemove="change()" value="0" type="range" min="0.01" max="1" step="0.01"&gt
+        
+        &ltbr&gt&ltp&gtR:&lt/p&gt
+        &ltinput id="red" onmousemove="change()" value="0" type="range" min="0" max="255"&gt
+        &ltbr&gt &ltp&gtG&lt/p&gt
+        &ltinput id="green" onmousemove="change()" value="0" type="range" min="0" max="255"&gt
+        &ltbr&gt &ltp&gtB&lt/p&gt
+        &ltinput id="blue" onmousemove="change()" value="0" type="range" min="0" max="255"&gt
+
+        
+        &ltinput type="button" name="" id="button" value="log it" onclick="change()"&gt
+
+        &lth2&gtCircle&lt/h2&gt
+        &ltdiv id="circle" class="circle"&gt&lt/div&gt
+        &ltp&gtChange the width of the circle&lt/p&gt
+        &ltinput id="circle-width" onmousemove="change()" value="0" type="range" min="10" max="1000" step="1"&gt
+        &ltbr&gt
+
+    &lt/div&gt
+
+
+&lt/body&gt
+
+&lt/html&gt

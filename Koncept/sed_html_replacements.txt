@@ -23,4 +23,17 @@ _________________
 
 find . -type f -not -path '*/\.*' -exec sed -i 's/</\&lt/g' {} +
 find . -type f -not -path '*/\.*' -exec sed -i 's/>/\&gt/g' {} +
+______________________
+sed -i ':a;N;$!ba;s/\n/\&#13;\&#10;/g' text.file
+______________________
+Replacing newline with smthing
+With GNU sed and provided POSIXLY_CORRECT is not in the environment (for single-line input):
+
+sed -i ':a;N;$!ba;s/\n/,/g' test.txt
+From https://stackoverflow.com/questions/1251999/sed-how-can-i-replace-a-newline-n :
+
+create a label via :a
+append the current and next line to the pattern space via N
+if we are before the last line, branch to the created label $!ba ($! means not to do it on the last line (as there should be one final newline)).
+finally the substitution replaces every newline with a comma on the pattern space (which is the whole file).
 

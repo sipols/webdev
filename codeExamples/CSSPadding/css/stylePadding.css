@@ -1,0 +1,38 @@
+/* inlike margin that gives space outside the div, padding gives space inside the div to the content in the div. */
+.has-left-padding{
+    padding-left: 50px;
+}
+
+.top-padding{
+    padding-top: 50px;
+}
+
+.right-padding{
+    padding-right: 70px;
+}
+
+.deff-margin-padding{
+    margin: 50px;
+    border: 10px solid lightsalmon;
+    padding: 50px;
+}
+
+.outline-div{
+    /* border:none; */
+    /* outside border, but might not fit in screen, same as border basically. */
+    outline: 20px ridge lightgreen;
+    /* control the area between the content and the outline */
+    outline-offset: 25px; 
+}
+
+.two-values{
+    /* same as for margin the sides in a line written
+    top-bottom are 50 px,
+    right-left 30 px */
+    padding: 50px 30px; 
+}
+
+div{
+    border: 10px solid lightseagreen;
+    height: 40%;
+}

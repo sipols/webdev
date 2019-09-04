@@ -1,0 +1,68 @@
+.center{
+    text-align: center;
+}
+
+.aligned-left{
+    text-align: left;
+      /* to allow  it be on same line as something else*/
+    float:left;
+}
+
+.aligned-right{
+    text-align: right;
+    /* to let it be on same line  */
+    float:right;
+}
+  
+div{
+    border: 1px solid;
+    background-color: lightyellow;
+    width: 50%; 
+    margin: auto;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+/* to fit the text to the box */
+.justify{
+    text-align: justify;
+}
+
+.decoration{
+    text-decoration: underline blue;
+}
+
+.transform{
+    text-transform: uppercase;
+    /* if father has this then inherit */
+    /* text-transform: inherit; */
+    /* to clear all settings */
+    /* text-transform: unset; */
+}
+
+.indent{
+    text-indent: 20px;
+}
+
+.letter-spacing{
+    letter-spacing: 5px;
+}
+
+.line-height{
+    line-height: 10px;
+}
+
+.direction{
+    /* right to left */
+    direction: rtl;
+    /* direction: ltr; */
+}
+
+.word-spacing{
+    word-spacing: 10px;
+    word-spacing: -10px;
+}
+
+.text-shadow{
+    text-shadow: 15px 2px 2px  rebeccapurple;
+}
