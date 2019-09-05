@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>WebDevToolBox</title>
+</head>
+
+<body>
+
+  <div class="headerDiv">
+    <div class="whatisDiv">
+      <h1>WebDevToolBox</h1>
+    </div>
+    <div class="menuDiv">
+        <ul class="nav">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <!-- <li><a href="#">News</a></li> -->
+        </ul>
+    </div>
+  </div>
+
+  <div class="containerDiv">
+
+    <div class="leftMenuDiv">
+      <p>Choose a tool</p>
+        <ul class="navLeft">
+            <li><a href="./colorPicker.html">HTML Input Slider</a></li>
+            <li><a href="./index.html">CSS Margins</a></li>
+            <li><a href="./marginsInAnother.html">CSS Margins In Another</a></li>
+            <li><a href="./animationBasics.html">CSS Animation Basic</a></li>
+            <li><a href="./animationLoops.html">CSS Animation Loops</a></li>
+            <li><a href="./colorPicker.html">JS Events</a></li>
+  
+            <!-- <li><a href="#">News</a></li> -->
+        </ul>
+    </div>
+
+    <div class="contentDiv">
+      <h1>CSS Animation: Loops</h1>
+
+      <div class="pictureDiv">
+          <!-- <div class="overlay">IMG</div> -->
+          <a href="../CSSAnimation/indexAnimation.html" target="_blank">
+        <img src="./img/animationLoop.JPG" alt="CodeSnippet">
+        </a>
+        
+      </div>
+
+      <div class="infoDiv">
+        <h3> An animation on repeat. Floating through screen and simple transitions.
+             Look at the code below.
+                If you would like to see the page live 
+                <a href="../CSSAnimation/indexAnimation.html" target="_blank">
+                    <b style="color: deeppink">Click here</b></a>.
+        </h3>
+      </div>
+
+      <div class="codeContainerDiv">
+
+        <!-- <div class="htmlDivCurtain"><h1>HTML</h1></div> -->
+        <div class="htmlDiv">
+          <div class="overlay">HTML</div>
+          <!-- CODE START -->
+         
+          <textarea>
+                &lt!DOCTYPE html&gt
+                &lthtml lang="en"&gt
+                &lthead&gt
+                    &ltmeta charset="UTF-8"&gt
+                    &ltmeta name="viewport" content="width=device-width, initial-scale=1.0"&gt
+                    &ltmeta http-equiv="X-UA-Compatible" content="ie=edge"&gt
+                    &ltlink rel="stylesheet" href="./css/styleAnimation.css"&gt
+                    &lttitle&gtAnimation&lt/title&gt
+                &lt/head&gt
+                &ltbody&gt
+                    &ltdiv class="animated-div"&gtDiv color&lt/div&gt
+                    &ltdiv class="animated-div2"&gtDiv color&lt/div&gt
+                    &ltdiv class="animated-div3"&gtDiv color&lt/div&gt
+                    &ltdiv class="animated-div4"&gtDiv color&lt/div&gt
+                    &ltdiv class="animated-div5"&gtDiv color&lt/div&gt
+                    &ltdiv class="moving-div"&gtMoving div&lt/div&gt
+                    &ltdiv class="moving-div2"&gtMoving div2&lt/div&gt
+                    &ltdiv class="moving-circle"&gtMoving circle&lt/div&gt
+                    &ltdiv class="moving-circle2"&gtMoving circle2&lt/div&gt
+                
+                    &ltdiv class="button-container"&gt
+                            &ltdiv class="button"&gt&lt/div&gt
+                    &lt/div&gt
+                  
+                &lt/body&gt
+                &lt/html&gt
+            </textarea>
+          <!-- CODE END -->
+          
+        </div>
+        <div class="cssDiv">
+          <div class="overlay">CSS</div>
+        <textarea>
+                .animated-div, .animated-div2, .animated-div3, .animated-div4, .animated-div5{
+                    width: 100px;
+                    height: 100px;
+                    background-color: aquamarine;
+                    animation-name: someMovement;
+                    animation-duration: 5s;
+                    animation-iteration-count: infinite;
+                }
+                
+                /* animation from start to destination */
+                @keyframes someMovement{
+                    from{
+                        background-color: brown;
+                         /* change width from this */
+                         width: 300px;
+                     
+                    }
+                    to{
+                        background-color: aquamarine;
+                
+                    }
+                }
+                
+                .animated-div2 {-webkit-animation-timing-function: ease-in-out;}
+                .animated-div3 {-webkit-animation-timing-function: ease;}
+                .animated-div4 {-webkit-animation-timing-function: linear;}
+                .animated-div4 {-webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);}
+                
+                .moving-div{
+                    width: 200px;
+                    height: 140px;
+                    border-radius: 20px;
+                
+                    top:110px;
+                    left:0px;
+                    position: absolute;
+                
+                    background-color: red;
+                    animation-name: moving;
+                    animation-duration: 5s;
+                    /* for animation to move always */
+                    animation-iteration-count: infinite;
+                }
+                
+                
+                .moving-div2{
+                    width: 280px;
+                    height: 200px;
+                    border-radius: 20px;
+                
+                    top:110px;
+                    left:0px;
+                    /* important for movement */
+                    position: absolute;
+                
+                    background-color: violet;
+                    animation-name: moving2;
+                    animation-duration: 5s;
+                    /* for animation to move always */
+                    animation-iteration-count: infinite;
+                }
+                
+                
+                .moving-circle{
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 50%;
+                
+                    top:110px;
+                    left:0px;
+                    /* important for movement */
+                    position: absolute;
+                
+                    background-color: lightblue;
+                    animation-name: moving3;
+                    animation-duration: 11s;
+                    /* for animation to move always */
+                    animation-iteration-count: infinite;
+                }
+                
+                .moving-circle2{
+                    width: 150px;
+                    height: 150px;
+                    border-radius: 50%;
+                    text-align: center;
+                
+                    top:110px;
+                    left:0px;
+                    /* important for movement */
+                    position: absolute;
+                
+                    background-color: lightsalmon;
+                    animation-name: moving4;
+                    animation-duration: 11s;
+                    /* for animation to move always */
+                    animation-iteration-count: infinite;
+                }
+                
+                /* to work in safari use -webkit */
+                @-webkit-keyframes moving{
+                /* @keyframes moving{ */
+                    from{
+                        /* float: left; */
+                        top: 110px;
+                        left:0px;
+                    }
+                    to{
+                        /* float:right; */
+                        top: 250px;
+                        left:300px;
+                    }
+                }
+                
+                /* to work in safari use -webkit */
+                @-webkit-keyframes moving2{
+                    /* @keyframes moving{ */
+                        /* top is y-axis, left is x-axis */
+                        0%{
+                            /* float: left; */
+                            top: 110px;
+                            left:0px;
+                        }
+                        25%{
+                        /* float: left; */
+                            top: 250px;
+                            left:300px;
+                        }
+                        50%{
+                            top: 350px;
+                            left:600px;
+                        }
+                        75%{
+                            top: 500px;
+                            left:300px;
+                        }
+                        100%{
+                            top: 110px;
+                            left:0px;
+                        }
+                    }
+                
+                    /* to work in safari use -webkit */
+                @-webkit-keyframes moving3{
+                    /* @keyframes moving{ */
+                            /* top is y-axis, left is x-axis */
+                        0%{
+                            /* float: left; */
+                            top: 110px;
+                            left:0px;
+                        }
+                        9%{
+                            /* float:right; */
+                            top: 110px;
+                            left:90%;
+                        }
+                        27%{
+                            /* float:right; */
+                            top: 500px;
+                            left:90%;
+                        }
+                        54%{
+                            /* float:right; */
+                            top: 500px;
+                            left:0px;
+                        }
+                        100%{
+                            /* float:right; */
+                            top: 110px;
+                            left:0px;
+                        }
+                    }
+                
+                       /* to work in safari use -webkit */
+                @-webkit-keyframes moving4{
+                    /* @keyframes moving{ */
+                    /* top is y-axis, left is x-axis */
+                        0%   {background-color:lightpink; left:0px; top:0px;}
+                        25%  {background-color:lightgreen; left:200px; top:0px;}
+                        50%  {background-color:lightyellow; left:200px; top:200px;}
+                        75%  {background-color:lightseagreen; left:0px; top:200px;}
+                        100% {background-color:lightcoral; left:0px; top:0px;}
+                    }
+                
+                .button-container{
+                    background-color: lightgoldenrodyellow;
+                    border: 2px solid coral;
+                    width: 200px;
+                    height: 50px;
+                    border-radius: 40px;
+                }
+                
+                .button{
+                    background-color: coral;
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    position: absolute;
+                    animation-name: button-slide;
+                    animation-duration: 2s;
+                    animation-iteration-count: infinite;
+                }
+                
+                @-webkit-keyframes button-slide{
+                    /* -webkit-animation-timing-function: linear; */
+                    /* -webkit-animation-timing-function:200px linear; */
+                    /* transform: translate(200px;0); */
+                    /* 0%, 100%{transform: translate(200px,0); } */
+                    from{
+                        left: 0%;
+                    }
+                    to
+                    {
+                        left: 160px;
+                    }
+                
+                }
+                
+                </textarea>
+        </div>
+        
+        <div class="jsDiv">
+            <div class="overlay">JS</div>
+            <textarea>
+            
+            </textarea>
+        </div>
+
+      </div>
+    </div>
+
+
+  </div>
+
+
+  <div class="footerDiv">Copyright Sipols</div>
+</body>
+
+</html>

@@ -9,7 +9,7 @@
 .whatisDiv{
   float: left;
   height: 100px;
-  width: 270px;
+  width: 290px;
   margin: auto;
   background-color: lightblue;
   margin: 1%;
@@ -38,11 +38,12 @@
 
 .menuDiv{
   float: right;
-  margin-top: 68px;
+  margin-top: 40px;
   height: 50px;
   width: 300px;
   /* margin: auto; */
   background-color: blanchedalmond;
+  /* box-shadow: 2px 2px rgba(49, 37, 46, 0.5); */
 }
 .nav{
   list-style: none;
@@ -87,17 +88,24 @@
   float: left;
   height: 1300px;
   max-width: 40%;
-  width: 170px;
+  width: 180px;
   margin: 5px;
-  background-color: lightseagreen;
+  background-color:  lightcoral;
   display: block;
+  box-shadow: 2px 2px rgba(49, 37, 46, 0.5);
+  
+}
+
+.leftMenuDiv p{
+  padding: 5px;
+  text-align: center;
 }
 
 .navLeft{
   list-style: none;
   margin:auto;
   /* margin-top:80px; */
-  width: 94.5%;
+  width: 93%;
   float: left;
   padding:  1px 6px 1px 6px;
   background-color: lightgreen;
@@ -138,6 +146,7 @@
   margin-left: 35px;
   max-width: 92%;
   height: 220px;
+  box-shadow: 2px 2px rgba(49, 37, 46, 0.5);
   /* background-color: crimson; */
 }
 
@@ -359,7 +368,7 @@ h1, h2, h3, h4, h5, h6, p, a{
   /* max-height: 250px; */
   width: 100%;
   max-width: 100%;
-  background-color: blueviolet;
+  background-color: rgb(11, 112, 79);
   padding-top: 2%;
   text-align: center;
 }
