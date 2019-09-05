@@ -1,8 +1,6 @@
 .headerDiv{
   height:130px;
-  /* max-height: 250px; */
   max-width: 100%;
-  /* background-color: yellow; */
   background-color: rgb(11, 112, 79);
 }
 
@@ -41,14 +39,11 @@
   margin-top: 40px;
   height: 50px;
   width: 300px;
-  /* margin: auto; */
   background-color: blanchedalmond;
-  /* box-shadow: 2px 2px rgba(49, 37, 46, 0.5); */
 }
 .nav{
   list-style: none;
   margin:auto;
-  /* margin-top:80px; */
   width: 94.5%;
   float: left;
   padding: 14px 0px 14px 16px;
@@ -80,7 +75,6 @@
   max-width: 100%;
   width: 100%;
   margin: auto;
-  /* background-color: lightblue; */
   float: left;
 }
 
@@ -93,7 +87,6 @@
   background-color:  lightcoral;
   display: block;
   box-shadow: 2px 2px rgba(49, 37, 46, 0.5);
-  
 }
 
 .leftMenuDiv p{
@@ -104,7 +97,6 @@
 .navLeft{
   list-style: none;
   margin:auto;
-  /* margin-top:80px; */
   width: 93%;
   float: left;
   padding:  1px 6px 1px 6px;
@@ -133,7 +125,6 @@
   width: 90%;
   max-width: 80%;
   background-color: lightpink;
-  /* background-color: rgba(11, 112, 79, 0.5); */
   margin: 5px 5px 5px 5px;
 }
 
@@ -148,7 +139,6 @@
   max-width: 92%;
   height: 220px;
   box-shadow: 2px 2px rgba(49, 37, 46, 0.5);
-  /* background-color: crimson; */
 }
 
 .pictureDivA{
@@ -157,7 +147,6 @@
   margin-left: 35px;
   max-width: 92%;
   height: 220px;
-  /* background-color: crimson; */
 }
 
 .pictureDiv img{
@@ -173,7 +162,6 @@
   margin-left: 35px;
   max-width: 92%;
   height: 150px;
-  
 }
 
 .animationContact{
@@ -208,12 +196,10 @@
   /* @keyframes moving{ */
       /* top is y-axis, left is x-axis */
       0%{
-          /* float: left; */
           top: 110px;
           left:0px;
       }
       25%{
-      /* float: left; */
           top: 250px;
           left:300px;
       }
@@ -232,15 +218,11 @@
   }
 
   @-webkit-keyframes moving22{
-    /* @keyframes moving{ */
-        /* top is y-axis, left is x-axis */
         0%{
-            /* float: left; */
             top: 110px;
             left:0px;
         }
         25%{
-        /* float: left; */
             top: 450px;
             left:800px;
         }
@@ -261,7 +243,6 @@
 .pictureDiv img{
   max-width:100%;
   height:100%;
-  /* object-fit: contain; */
 }
 
 .infoDiv{
@@ -287,21 +268,18 @@
   float: left;
   height: 60%;
   width: 65%;
-  /* background-color: rgb(175, 58, 78); */
   margin: 5px 2px 5px 5px;
 }
 .cssDiv{
   float: right;
   height: 97%;
   width: 30%;
-  /* background-color: rgb(189, 37, 151); */
   margin: 5px 5px 5px 2px;
 }
 .jsDiv{
   float: left;
   height: 35%;
   width: 65%;
-  /* background-color: rgb(37, 189, 105); */
   margin: 5px 5px 5px 5px;
 }
 
@@ -312,7 +290,6 @@
 
 .overlay{
   position: absolute; 
-  /* bottom: 0;  */
   right: 0;
   background: rgb(107, 92, 24);
   background: rgba(85, 78, 14, 0.5); /* Black see-through */
@@ -346,6 +323,9 @@ table, tr, td{
   margin: auto;
   padding: 1px;
 }
+.headTable{
+  background-color: crimson;
+}
 
 tr:nth-child(2n){
   /* 2n == even */
@@ -375,7 +355,6 @@ h1, h2, h3, h4, h5, h6, p, a{
   float: left;
   display: block;
   height:100px;
-  /* max-height: 250px; */
   width: 100%;
   max-width: 100%;
   background-color: rgb(11, 112, 79);
